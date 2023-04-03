@@ -1,8 +1,8 @@
 package hello;
 
-import jakarta.annotation.PostConstruct;
 import java.util.List;
 import java.util.Set;
+import javax.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.stereotype.Component;
