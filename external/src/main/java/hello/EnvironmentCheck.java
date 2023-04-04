@@ -21,12 +21,12 @@ public class EnvironmentCheck {
 	@PostConstruct
 	public void init() {
 		String url = env.getProperty("url");
-		String username = env.getProperty("username");
+		String myUsername = env.getProperty("myUsername");
 		String password = env.getProperty("password");
 		String numbers = env.getProperty("numbers");
 
 		log.info("env url={}", url); // 커맨드 라인 옵션 인수, 중복
-		log.info("env username={}", username); // 커맨드 라인 옵션 인수, 중복
+		log.info("env myUsername={}", myUsername); // 커맨드 라인 옵션 인수, 중복
 		log.info("env password={}", password); // 커맨드 라인 옵션 인수, 중복
 		log.info("env numbers={}", numbers); // 자바 시스템 속성, 중복 X
 	}
